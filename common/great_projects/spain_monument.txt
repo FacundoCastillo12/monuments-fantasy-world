@@ -79,6 +79,8 @@ michael_legacy = {
 			global_colonial_growth = 10
 			treasure_fleet_income = 0.1
 			global_tariffs = 0.1
+			native_uprising_chance = 0.05
+			native_assimilation = -0.05
 		}
 		on_upgraded = {
 		}
@@ -95,12 +97,14 @@ michael_legacy = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			colonists = 2
+			colonists = 1
 			range = 0.5
 			global_colonial_growth = 15
 			colonist_placement_chance = 0.05
 			treasure_fleet_income = 0.25
 			global_tariffs = 0.25
+			native_uprising_chance = 0.1
+			native_assimilation = -0.1
 		}
 		on_upgraded = {
 		}
@@ -162,6 +166,7 @@ god_shipyard = {
 			local_ship_cost = -0.1
 		}
 		country_modifiers = {
+			naval_morale = 0.05
 		}
 		on_upgraded = {
 		}
@@ -182,7 +187,9 @@ god_shipyard = {
 			local_ship_cost = -0.25
 		}
 		country_modifiers = {
+			global_ship_cost = 0.1
 			heavy_ship_power = 0.05
+			naval_morale = 0.075
 			naval_forcelimit_modifier = 0.1
 			global_sailors_modifier = 0.1
 			sailors_recovery_speed = 0.1
@@ -206,12 +213,13 @@ god_shipyard = {
 			local_ship_cost = -0.5
 		}
 		country_modifiers = {
-			heavy_ship_power = 0.15
+			global_ship_cost = 0.15
+			heavy_ship_power = 0.1
+			naval_morale = 0.1
 			naval_forcelimit_modifier = 0.25
 			global_sailors_modifier = 0.25
 			sailors_recovery_speed = 0.25
 			navy_tradition = 1
-			naval_morale = 0.25
 		}
 		on_upgraded = {
 		}
@@ -388,6 +396,7 @@ palace_angels = {
 			diplomatic_reputation = 1
 			envoy_travel_time = -0.1
 			ae_impact = -0.05
+			relation_with_heretics = -10
 		}
 		on_upgraded = {
 		}
@@ -408,6 +417,7 @@ palace_angels = {
 			diplomatic_reputation = 2
 			envoy_travel_time = -0.2
 			ae_impact = -0.1
+			relation_with_heretics = -15
 		}
 		on_upgraded = {
 		}
@@ -518,6 +528,7 @@ castle_sacred_queen = {
 			drill_gain_modifier = 0.15
 			drill_decay_modifier = -0.15
 			defensiveness = 0.15
+			fort_maintenance_modifier = 0.1
 		}
 		on_upgraded = {
 		}
@@ -534,6 +545,7 @@ castle_sacred_queen = {
 			local_hostile_movement_speed = 0.3
 			local_defensiveness = 0.4
 			garrison_growth = 0.2
+			fort_level = 2
 		}
 		area_modifier = {
 		}
@@ -541,7 +553,7 @@ castle_sacred_queen = {
 			drill_gain_modifier = 0.25
 			drill_decay_modifier = -0.25
 			defensiveness = 0.2
-			fort_level = 2
+			fort_maintenance_modifier = 0.15
 		}
 		on_upgraded = {
 		}
@@ -600,6 +612,8 @@ barracks_archangel = {
 		country_modifiers = {
 			discipline = 0.05
 			land_morale = 0.05
+			tolerance_heretic = -1
+			tolerance_heathen = -1
 			manpower_in_true_faith_provinces = 0.1
 		}
 		on_upgraded = {
@@ -617,11 +631,10 @@ barracks_archangel = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			discipline = 0.1
-			land_morale = 0.1
-			tolerance_own = 1
-			tolerance_heretic = -1
-			tolerance_heathen = -1
+			discipline = 0.075
+			land_morale = 0.075
+			tolerance_heretic = -2
+			tolerance_heathen = -2
 			manpower_in_true_faith_provinces = 0.15
 		}
 		on_upgraded = {
@@ -639,13 +652,12 @@ barracks_archangel = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			discipline = 0.015
-			land_morale = 0.2
+			discipline = 0.125
+			land_morale = 0.125
 			fire_damage_received = -0.1
 			manpower_in_true_faith_provinces = 0.25
-			tolerance_own = 4
-			tolerance_heretic = -3
-			tolerance_heathen = -3
+			tolerance_heretic = -4
+			tolerance_heathen = -4
 		}
 		on_upgraded = {
 		}
@@ -701,11 +713,11 @@ rafael_company = {
 			province_trade_power_modifier = 0.1
 		}
 		area_modifier = {
-			local_prosperity_growth = -0.1
+			local_prosperity_growth = 0.025
 			local_production_efficiency = 0.1
 		}
 		country_modifiers = {
-			global_trade_power = 0.1
+			global_trade_power = 0.05
 			trade_range_modifier = 0.1
 			trade_company_investment_cost = -0.1
 		}
@@ -724,11 +736,11 @@ rafael_company = {
 			trade_value_modifier = 0.1
 		}
 		area_modifier = {
-			local_prosperity_growth = -0.2
+			local_prosperity_growth = 0.05
 			local_production_efficiency = 0.2
 		}
 		country_modifiers = {
-			global_trade_power = 0.15
+			global_trade_power = 0.1
 			trade_range_modifier = 0.25
 			trade_company_investment_cost = -0.15
 		}
@@ -747,13 +759,13 @@ rafael_company = {
 			trade_value_modifier = 0.15
 		}
 		area_modifier = {
-			local_prosperity_growth = -0.3
+			local_prosperity_growth = 0.1
 			local_production_efficiency = 0.3
 		}
 		country_modifiers = {
 			merchants = 2
-			global_trade_power = 0.2
-			trade_range_modifier = 0.4
+			global_trade_power = 0.15
+			trade_range_modifier = 0.3
 			trade_company_investment_cost = -0.25
 			center_of_trade_upgrade_cost = -0.15
 		}
@@ -813,8 +825,8 @@ sacred_library = {
 			local_unrest = -1
 		}
 		country_modifiers = {
-			technology_cost = -0.05
-			idea_cost = -0.05
+			technology_cost = -0.025
+			idea_cost = -0.025
 		}
 		on_upgraded = {
 		}
@@ -832,11 +844,10 @@ sacred_library = {
 			local_unrest = -2
 		}
 		country_modifiers = {
-			technology_cost = -0.1
-			idea_cost = -0.1
-			tolerance_own = 1
-			tolerance_heretic = -1
-			tolerance_heathen = -1
+			technology_cost = -0.05
+			idea_cost = -0.05
+			tolerance_heretic = -2
+			tolerance_heathen = -2
 		}
 		on_upgraded = {
 		}
@@ -851,16 +862,15 @@ sacred_library = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_unrest = -3
+			local_unrest = -4
 		}
 		country_modifiers = {
-			technology_cost = -0.2
-			idea_cost = -0.2
+			technology_cost = -0.1
+			idea_cost = -0.1
 			all_power_cost = -0.1
 			free_policy = 1
-			tolerance_own = 3
-			tolerance_heretic = -2
-			tolerance_heathen = -2
+			tolerance_heretic = -4
+			tolerance_heathen = -4
 		}
 		on_upgraded = {
 		}
