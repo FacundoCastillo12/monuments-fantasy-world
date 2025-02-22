@@ -1,9 +1,9 @@
 ####################
-#British Isles
+# Low Countries
 ####################
-#Princes Navy
-princes_navy = {
-	start = 239
+#Obsidian Pact
+obsidian_pact = {
+	start = 91
 	date = 1.01.01
 	time = {
 		months = 120
@@ -52,9 +52,12 @@ princes_navy = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			naval_morale = 0.05
-			global_ship_cost = 0.1
-			naval_tradition_from_battle = 0.1
+			mercenary_cost = -0.05
+			mercenary_manpower = 0.05
+			merc_maintenance_modifier = -0.05
+			mercenary_discipline = 0.025
+			allow_mercenary_drill = yes
+			merc_independent_from_trade_range = yes
 		}
 		on_upgraded = {
 		}
@@ -71,10 +74,12 @@ princes_navy = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			naval_tradition_from_battle = 0.2
-			capture_ship_chance = 0.1
-			naval_morale = 0.1
-			global_ship_cost = 0.15
+			mercenary_cost = -0.1
+			mercenary_manpower = 0.1
+			merc_maintenance_modifier = -0.1
+			mercenary_discipline = 0.05
+			allow_mercenary_drill = yes
+			merc_independent_from_trade_range = yes
 		}
 		on_upgraded = {
 		}
@@ -91,34 +96,26 @@ princes_navy = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			navy_tradition = 1
-			navy_tradition_decay = -0.02
-			naval_tradition_from_battle = 0.3
-			capture_ship_chance = 0.1
-			naval_morale = 0.15
-			global_ship_cost = 0.25
+			mercenary_cost = -0.15
+			mercenary_manpower = 0.15
+			merc_maintenance_modifier = -0.15
+			mercenary_discipline = 0.075
+			allow_mercenary_drill = yes
+			merc_independent_from_trade_range = yes
 		}
 		on_upgraded = {
-			owner = {
-				define_admiral = {
-					shock = 5
-					fire = 6
-					manuever = 6
-					siege = 4
-				}
-			}
 		}
 	}
 }
 
-#The travelers ship
-the_travelers_ship = {
-	start = 4119
+#Iron Citadel
+iron_citadel = {
+	start = 99
 	date = 1.01.01
 	time = {
 		months = 120
 	}
-	build_cost = 25000
+	build_cost = 15000
 	starting_tier = 0
 	type = monument
 	can_be_moved = no
@@ -152,25 +149,126 @@ the_travelers_ship = {
 	}
 	tier_1 = {
 		upgrade_time = {
-			months = 60
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 500
+		}
+		province_modifiers = {
+			local_garrison_size = 0.05
+		}
+		area_modifier = {
+			fort_level = 0
+		}
+		country_modifiers = {
+			fort_maintenance_modifier = -0.05
+			rival_border_fort_maintenance = -0.05
+			local_defensiveness = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_garrison_size = 0.1
+		}
+		area_modifier = {
+			fort_level = 1
+		}
+		country_modifiers = {
+			fort_maintenance_modifier = -0.1
+			rival_border_fort_maintenance = -0.1
+			local_defensiveness = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 150
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+		province_modifiers = {
+			local_garrison_size = 0.15
+			local_defensiveness = 0.15
+		}
+		area_modifier = {
+			fort_level = 2
+		}
+		country_modifiers = {
+			fort_maintenance_modifier = -0.15
+			rival_border_fort_maintenance = -0.15
+			local_defensiveness = 0.2
+			army_tradition = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+#Forbidden Archives
+forbidden_archives = {
+	start = 220
+	date = 1.01.01
+	time = {
+		months = 120
+	}
+	build_cost = 15000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+	}
+	on_built = {
+	}
+	on_destroyed = {
+	}
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			colonists = 1
-			range = 0.1
 		}
 		on_upgraded = {
-			define_explorer = {
-				shock = 4
-				fire = 4
-				manuever = 6
-			}
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			technology_cost = -0.05
+			innovativeness_gain = 0.1
+		}
+		on_upgraded = {
 		}
 	}
 	tier_2 = {
@@ -178,16 +276,16 @@ the_travelers_ship = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 1500
+			factor = 2500
 		}
 		province_modifiers = {
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			colonists = 1
-			range = 0.25
-			global_colonial_growth = 10
+			technology_cost = -0.075
+			innovativeness_gain = 0.25
+			all_power_cost = -0.025
 		}
 		on_upgraded = {
 		}
@@ -204,22 +302,359 @@ the_travelers_ship = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			colonists = 1
-			range = 0.5
-			global_colonial_growth = 25
-			native_uprising_chance = 0.15
-			native_assimilation = 0.25
+			technology_cost = -0.1
+			innovativeness_gain = 0.5
+			yearly_innovativeness = 0.25
+			all_power_cost = -0.05
+			country_military_power = 1
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+# Blood Bargain Hall
+blood_bargain_hall = {
+	start = 1931
+	date = 1.01.01
+	time = {
+		months = 120
+	}
+	build_cost = 15000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+	}
+	on_built = {
+	}
+	on_destroyed = {
+	}
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_unrest = 1
+		}
+		country_modifiers = {
+			stability_cost_modifier = -0.1
+			global_autonomy = -0.011
+			years_of_nationalism = -2
+			overextension_impact_modifier = -0.1
+			liberty_desire = -5
 		}
 		on_upgraded = {
 			owner = {
+				add_stability = 1
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_unrest = -1
+		}
+		country_modifiers = {
+			stability_cost_modifier = -0.2
+			global_autonomy = -0.015
+			years_of_nationalism = -5
+			overextension_impact_modifier = -0.15
+			liberty_desire = -10
+		}
+		on_upgraded = {
+			owner = {
+				add_stability = 2
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+			local_unrest = 2
+		}
+		country_modifiers = {
+			stability_cost_modifier = -0.5
+			global_autonomy = -0.025
+			years_of_nationalism = -10
+			overextension_impact_modifier = -0.25
+			liberty_desire = -25
+		}
+		on_upgraded = {
+			owner = {
+				add_stability = 3
 			}
 		}
 	}
 }
 
-# Bloody Palace
-bloody_palace = {
-	start = 250
+#Whispering Vault
+whispering_vault = {
+	start = 96
+	date = 1.01.01
+	time = {
+		months = 120
+	}
+	build_cost = 15000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+	}
+	on_built = {
+	}
+	on_destroyed = {
+	}
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			monarch_lifespan = -0.075
+			interest = -0.25
+			inflation_reduction = 0.05
+			production_efficiency = 0.05
+			state_maintenance_modifier = -0.1
+			global_prosperity_growth = 0.05
+			administrative_efficiency = 0.025
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			monarch_lifespan = -0.125
+			interest = -0.75
+			inflation_reduction = 0.1
+			production_efficiency = 0.1
+			state_maintenance_modifier = -0.25
+			global_prosperity_growth = 0.075
+			administrative_efficiency = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			monarch_lifespan = -0.25
+			interest = -1.5
+			inflation_reduction = 0.2
+			production_efficiency = 0.2
+			state_maintenance_modifier = -0.5
+			global_prosperity_growth = 0.1
+			administrative_efficiency = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+#Crimson Exchange
+crimson_exchange = {
+	start = 4383
+	date = 1.01.01
+	time = {
+		months = 120
+	}
+	build_cost = 15000
+	starting_tier = 0
+	type = monument
+	can_be_moved = no
+	build_trigger = {
+	}
+	on_built = {
+	}
+	on_destroyed = {
+	}
+	can_use_modifiers_trigger = {
+	}
+	can_upgrade_trigger = {
+	}
+	keep_trigger = {
+	}
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			min_local_autonomy = 5
+			local_monthly_devastation = 0.01
+		}
+		area_modifier = {
+			local_autonomy = 0.005
+			local_development_cost = -0.1
+		}
+		country_modifiers = {
+			development_cost = -0.05
+			trade_steering = 0.1
+		}
+		on_upgraded = {
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			min_local_autonomy = 7
+			local_monthly_devastation = 0.02
+		}
+		area_modifier = {
+			local_autonomy = 0.01
+			local_development_cost = -0.125
+		}
+		country_modifiers = {
+			development_cost = -0.1
+			merchants = 1
+			trade_steering = 0.15
+			privateer_efficiency = 0.1
+			free_concentrate_development = yes
+		}
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 5000
+		}
+		province_modifiers = {
+			min_local_autonomy = 10
+			local_monthly_devastation = 0.03
+		}
+		area_modifier = {
+			local_autonomy = 0.015
+			local_development_cost = -0.2
+		}
+		country_modifiers = {
+			development_cost = -0.15
+			merchants = 1
+			trade_steering = 0.15
+			privateer_efficiency = 0.25
+			free_concentrate_development = yes
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+#Chained Colossus
+chained_colossus = {
+	start = 94
 	date = 1.01.01
 	time = {
 		months = 120
@@ -267,123 +702,12 @@ bloody_palace = {
 		}
 		area_modifier = {
 			local_manpower_modifier = 0.1
-			local_regiment_cost = -0.1
-			regiment_recruit_speed = -0.1
+			supply_limit_modifier = 0.1
 		}
 		country_modifiers = {
-			discipline = 0.025
-		}
-		on_upgraded = {
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_manpower_modifier = 0.25
-			local_regiment_cost = -0.15
-			regiment_recruit_speed = -0.15
-		}
-		country_modifiers = {
-			army_tradition = 1
-			army_tradition_from_battle = 0.1
 			infantry_power = 0.05
-			discipline = 0.05
-			global_manpower_modifier = -0.05
-		}
-		on_upgraded = {
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_manpower_modifier = 0.4
-			local_regiment_cost = -0.25
-			regiment_recruit_speed = -0.25
-		}
-		country_modifiers = {
-			army_tradition = 1
-			army_tradition_decay = -0.01
-			army_tradition_from_battle = 0.15
-			infantry_power = 0.1
-			discipline = 0.1
-			global_manpower_modifier = -0.1
-		}
-		on_upgraded = {
-			owner = {
-			}
-		}
-	}
-}
-
-# Princess Palace
-princess_palace = {
-	start = 4372
-	date = 1.01.01
-	time = {
-		months = 120
-	}
-	build_cost = 15000
-	starting_tier = 0
-	type = monument
-	can_be_moved = no
-	build_trigger = {
-	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	can_use_modifiers_trigger = {
-	}
-	can_upgrade_trigger = {
-	}
-	keep_trigger = {
-	}
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_unrest = -1
-		}
-		country_modifiers = {
-			heir_chance = 0.1
-			improve_relation_modifier = 0.1
-			ae_impact = -0.05
+			global_manpower_modifier = 0.05
+			land_forcelimit_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -399,11 +723,13 @@ princess_palace = {
 		}
 		area_modifier = {
 			local_manpower_modifier = 0.15
-			local_tax_modifier = 0.15
+			supply_limit_modifier = 0.15
 		}
 		country_modifiers = {
-			diplomatic_reputation = 1
-			ae_impact = -0.1
+			infantry_power = 0.1
+			morale_damage = 0.05
+			global_manpower_modifier = 0.1
+			land_forcelimit_modifier = 0.1
 		}
 		on_upgraded = {
 		}
@@ -418,544 +744,15 @@ princess_palace = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_manpower_modifier = 0.3
-			local_tax_modifier = 0.3
+			local_manpower_modifier = 0.25
+			supply_limit_modifier = 0.25
 		}
 		country_modifiers = {
-			diplomatic_reputation = 2
-			diplomatic_upkeep = 1
-			ae_impact = -0.15
-		}
-		on_upgraded = {
-			owner = {
-			}
-		}
-	}
-}
-
-# Dark Church
-dark_church = {
-	start = 233
-	date = 1.01.01
-	time = {
-		months = 120
-	}
-	build_cost = 15000
-	starting_tier = 0
-	type = monument
-	can_be_moved = no
-	build_trigger = {
-	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	can_use_modifiers_trigger = {
-	}
-	can_upgrade_trigger = {
-	}
-	keep_trigger = {
-	}
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_tax_modifier = 0.1
-		}
-		country_modifiers = {
-			global_missionary_strength = 0.01
-		}
-		on_upgraded = {
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_tax_modifier = 0.2
-		}
-		country_modifiers = {
-			tolerance_own = 1
-			tolerance_heretic = 1
-			tolerance_heathen = 1
-			global_missionary_strength = 0.02
-		}
-		on_upgraded = {
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_tax_modifier = 0.3
-			local_development_cost = -0.1
-		}
-		country_modifiers = {
-			tolerance_own = 2
-			tolerance_heretic = 2
-			tolerance_heathen = 2
-			global_missionary_strength = 0.03
-		}
-		on_upgraded = {
-		}
-	}
-}
-
-# Palace of Pleasure
-palace_of_pleasure = {
-	start = 236
-	date = 1.01.01
-	time = {
-		months = 120
-	}
-	build_cost = 15000
-	starting_tier = 0
-	type = monument
-	can_be_moved = no
-	build_trigger = {
-	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	can_use_modifiers_trigger = {
-	}
-	can_upgrade_trigger = {
-	}
-	keep_trigger = {
-	}
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_unrest = -1
-		}
-		country_modifiers = {
-			heir_chance = 0.1
-			improve_relation_modifier = 0.1
-			administrative_efficiency = 0.025
-		}
-		on_upgraded = {
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_unrest = -3
-		}
-		country_modifiers = {
-			improve_relation_modifier = 0.2
-			heir_chance = 0.25
-			administrative_efficiency = 0.05
-		}
-		on_upgraded = {
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_unrest = -5
-		}
-		country_modifiers = {
-			prestige = 1
-			nobility_loyalty_modifier = 0.15
-			improve_relation_modifier = 0.3
-			administrative_efficiency = 0.1
-			heir_chance = 0.5
-		}
-		on_upgraded = {
-		}
-	}
-}
-
-# Vampire Fortress
-vampire_fortress = {
-	start = 4366
-	date = 1.01.01
-	time = {
-		months = 120
-	}
-	build_cost = 15000
-	starting_tier = 0
-	type = monument
-	can_be_moved = no
-	build_trigger = {
-	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	can_use_modifiers_trigger = {
-	}
-	can_upgrade_trigger = {
-	}
-	keep_trigger = {
-	}
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-			local_hostile_attrition = 1
-		}
-		area_modifier = {
-			local_defensiveness = 0.1
-		}
-		country_modifiers = {
-			defensiveness = 0.05
-			fort_maintenance_modifier = -0.05
-		}
-		on_upgraded = {
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-			local_hostile_attrition = 3
-		}
-		area_modifier = {
-			local_defensiveness = 0.2
-		}
-		country_modifiers = {
-			defensiveness = 0.1
-			fort_maintenance_modifier = -0.1
-			drill_gain_modifier = 0.1
-		}
-		on_upgraded = {
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-			local_hostile_attrition = 5
-		}
-		area_modifier = {
-			local_defensiveness = 0.3
-		}
-		country_modifiers = {
-			fort_maintenance_modifier = -0.2
-			defensiveness = 0.2
-			garrison_growth = 0.05
-			rival_border_fort_maintenance = -0.1
-			drill_gain_modifier = 0.15
-		}
-		on_upgraded = {
-		}
-	}
-}
-
-# Gray Palace
-gray_palace = {
-	start = 4378
-	date = 1.01.01
-	time = {
-		months = 120
-	}
-	build_cost = 15000
-	starting_tier = 0
-	type = monument
-	can_be_moved = no
-	build_trigger = {
-	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	can_use_modifiers_trigger = {
-	}
-	can_upgrade_trigger = {
-	}
-	keep_trigger = {
-	}
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_unrest = -1
-		}
-		country_modifiers = {
-			global_unrest = -1
-			global_autonomy = -0.01
-			harsh_treatment_cost = -0.1
-			stability_cost_modifier = -0.1
-		}
-		on_upgraded = {
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_unrest = -2
-		}
-		country_modifiers = {
-			global_unrest = -2
-			global_autonomy = -0.03
-			harsh_treatment_cost = -0.2
-			stability_cost_modifier = -0.2
-		}
-		on_upgraded = {
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			local_unrest = -3
-		}
-		country_modifiers = {
-			global_unrest = -4
-			global_autonomy = -0.05
-			harsh_treatment_cost = -0.3
-			years_of_nationalism = -5
-			stability_cost_modifier = -0.3
-		}
-		on_upgraded = {
-			owner = {
-				add_adm_power = 100
-				add_dip_power = 100
-				add_mil_power = 100
-			}
-		}
-	}
-}
-
-prince_shipyard = {
-	start = 246
-	date = 1.01.01
-	time = {
-		months = 120
-	}
-	build_cost = 15000
-	starting_tier = 0
-	type = monument
-	can_be_moved = no
-	build_trigger = {
-	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	can_use_modifiers_trigger = {
-	}
-	can_upgrade_trigger = {
-	}
-	keep_trigger = {
-	}
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			ship_recruit_speed = -0.1
-			local_sailors_modifier = 0.1
-			local_ship_repair = 0.1
-			local_ship_cost = -0.1
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			ship_recruit_speed = -0.25
-			local_sailors_modifier = 0.25
-			local_ship_repair = 0.25
-			local_ship_cost = -0.25
-		}
-		country_modifiers = {
-			heavy_ship_power = 0.05
-			naval_forcelimit_modifier = 0.1
-			global_sailors_modifier = 0.1
-			sailors_recovery_speed = 0.1
-		}
-		on_upgraded = {
-		}
-	}
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			ship_recruit_speed = -0.5
-			local_sailors_modifier = 0.5
-			local_ship_repair = 0.5
-			local_ship_cost = -0.5
-		}
-		country_modifiers = {
-			heavy_ship_power = 0.15
-			flagship_cost = -0.15
-			naval_forcelimit_modifier = 0.2
-			global_sailors_modifier = 0.2
-			sailors_recovery_speed = 0.2
+			infantry_power = 0.15
+			infantry_fire = 1
+			morale_damage = 0.1
+			global_manpower_modifier = 0.15
+			land_forcelimit_modifier = 0.15
 		}
 		on_upgraded = {
 		}
