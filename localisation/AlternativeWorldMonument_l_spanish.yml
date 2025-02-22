@@ -1,0 +1,123 @@
+﻿l_spanish:
+# Islas Británicas - Vampiros
+palace_of_pleasure_title: "Palacio del Placer"
+palace_of_pleasure: "Palacio del Placer"
+great_project_palace_of_pleasure: "Palacio del Placer"
+palace_of_pleasure_desc: "Un lujoso palacio donde la aristocracia vampírica puede descansar y reponerse, alimentándose de la sangre más fina para revitalizar su fuerza y vigor."
+
+princess_palace_title: "Palacio de la Princesa"
+princess_palace: "Palacio de la Princesa"
+great_project_princess_palace: "Palacio de la Princesa"
+princess_palace_desc: "La residencia de la princesa vampírica, un lugar de oscura elegancia donde el poder y la belleza se entrelazan en una noche eterna."
+
+vampire_fortress_title: "Fortaleza Vampírica"
+vampire_fortress: "Fortaleza Vampírica"
+great_project_vampire_fortress: "Fortaleza Vampírica"
+vampire_fortress_desc: "Una fortaleza casi impenetrable, que alberga a los guerreros más formidables de los clanes vampíricos, siempre vigilantes ante cualquier amenaza."
+
+gray_palace_title: "Palacio Gris"
+gray_palace: "Palacio Gris"
+great_project_gray_palace: "Palacio Gris"
+gray_palace_desc: "Un palacio envuelto en niebla, donde los vampiros ancestrales susurran secretos que moldean el destino de los no-muertos."
+
+prince_shipyard_title: "Astillero del Príncipe"
+prince_shipyard: "Astillero del Príncipe"
+great_project_prince_shipyard: "Astillero del Príncipe"
+prince_shipyard_desc: "Un bastión naval donde se construyen embarcaciones sombrías, asegurando la supremacía vampírica sobre los mares."
+
+princes_navy_title: "Armada del Príncipe"
+princes_navy: "Armada del Príncipe"
+great_project_princes_navy: "Armada del Príncipe"
+princes_navy_desc: "Una flota de barcos tripulados por marineros de pesadilla, sembrando terror en aquellos que osan desafiar el dominio vampírico."
+
+the_travelers_ship_title: "El Barco del Viajero"
+the_travelers_ship: "El Barco del Viajero"
+great_project_the_travelers_ship: "El Barco del Viajero"
+the_travelers_ship_desc: "Un legendario navío que se dice viaja tanto por el mundo físico como por el reino de las sombras, portando secretos de los no-muertos."
+
+bloody_palace_title: "Palacio Sangriento"
+bloody_palace: "Palacio Sangriento"
+great_project_bloody_palace: "Palacio Sangriento"
+bloody_palace_desc: "Un sombrío monumento donde ríos de sangre fluyen, rindiendo homenaje a los señores vampiros que han gobernado con colmillos de hierro."
+
+dark_church_title: "Iglesia Oscura"
+dark_church: "Iglesia Oscura"
+great_project_dark_church: "Iglesia Oscura"
+dark_church_desc: "Los vampiros aceptan las creencias de los sacos de carne llamados alimento y las apoyan directamente. Después de todo, la comida es comida, sin importar en qué crean."
+
+# Francia - Magos
+alchemist_tower_title: "Torre del Alquimista"
+alchemist_tower: "Torre del Alquimista"
+great_project_alchemist_tower: "Torre del Alquimista"
+alchemist_tower_desc: "Un centro de experimentación mística donde los alquimistas buscan la piedra filosofal y desentrañan los secretos de la transmutación."
+
+academy_mages_title: "Academia de Magos"
+academy_mages: "Academia de Magos"
+great_project_academy_mages: "Academia de Magos"
+academy_mages_desc: "La institución de magia más prestigiosa, donde solo los magos más dotados son entrenados en las artes arcanas."
+
+archmagus_tower_title: "Torre del Archimago"
+archmagus_tower: "Torre del Archimago"
+great_project_archmagus_tower: "Torre del Archimago"
+archmagus_tower_desc: "La residencia del Archimago, un ser de inmenso poder que salvaguarda el equilibrio de la magia."
+
+mage_market_title: "Mercado de Magos"
+mage_market: "Mercado de Magos"
+great_project_mage_market: "Mercado de Magos"
+mage_market_desc: "Un bullicioso centro de comercio mágico, donde artefactos encantados e ingredientes raros cambian de manos."
+
+witches_coven_title: "Cónclave de Brujas"
+witches_coven: "Cónclave de Brujas"
+great_project_witches_coven: "Cónclave de Brujas"
+witches_coven_desc: "Un santuario oculto donde poderosas brujas tejen conjuros que moldean el destino de las naciones."
+
+magic_research_tower_title: "Torre de Investigación Mágica"
+magic_research_tower: "Torre de Investigación Mágica"
+great_project_magic_research_tower: "Torre de Investigación Mágica"
+magic_research_tower_desc: "Un bastión del conocimiento arcano, donde los eruditos dedican sus vidas a desentrañar los misterios de la magia."
+
+world_library_title: "La Biblioteca del Mundo"
+world_library: "La Biblioteca del Mundo"
+great_project_world_library: "La Biblioteca del Mundo"
+world_library_desc: "Una vasta colección de tomos y grimorios, que alberga la sabiduría mágica acumulada durante siglos."
+
+# España - Ángeles
+michael_legacy_title: "El Legado de Miguel"
+michael_legacy: "El Legado de Miguel"
+great_project_michael_legacy: "El Legado de Miguel"
+michael_legacy_desc: "Un monumento divino que honra las victorias del arcángel Miguel, inspirando a los fieles hacia la rectitud."
+
+god_shipyard_title: "Astillero de Dios"
+god_shipyard: "Astillero de Dios"
+great_project_god_shipyard: "Astillero de Dios"
+god_shipyard_desc: "Un muelle sagrado donde se forjan barcos celestiales, guiados por la voluntad divina para castigar a los impíos."
+
+sacred_inquisitor_title: "Los Sagrados Inquisidores"
+sacred_inquisitor: "Los Sagrados Inquisidores"
+great_project_sacred_inquisitor: "Los Sagrados Inquisidores"
+sacred_inquisitor_desc: "Una orden élite de guerreros angelicales encargados de purgar la herejía y hacer cumplir la justicia divina."
+
+palace_angels_title: "El Palacio de los Ángeles"
+palace_angels: "El Palacio de los Ángeles"
+great_project_palace_angels: "El Palacio de los Ángeles"
+palace_angels_desc: "Un radiante palacio donde residen los ángeles más exaltados, emanando luz sagrada por toda la tierra."
+
+castle_sacred_queen_title: "El Castillo de la Reina Sagrada"
+castle_sacred_queen: "El Castillo de la Reina Sagrada"
+great_project_castle_sacred_queen: "El Castillo de la Reina Sagrada"
+castle_sacred_queen_desc: "El trono divino de la Reina Sagrada, un faro de pureza y guía para sus seguidores."
+
+barracks_archangel_title: "Cuartel del Arcángel"
+barracks_archangel: "Cuartel del Arcángel"
+great_project_barracks_archangel: "Cuartel del Arcángel"
+barracks_archangel_desc: "Un campo de entrenamiento para legiones angelicales, donde los guerreros se preparan para la batalla contra las fuerzas de la oscuridad."
+
+rafael_company_title: "Compañía Comercial de Rafael"
+rafael_company: "Compañía Comercial de Rafael"
+great_project_rafael_company: "Compañía Comercial de Rafael"
+rafael_company_desc: "Un gremio sagrado de comercio, bendecido por los cielos, asegurando la expansión de la influencia divina a través del comercio."
+
+sacred_library_title: "La Biblioteca Sagrada"
+sacred_library: "La Biblioteca Sagrada"
+great_project_sacred_library: "La Biblioteca Sagrada"
+sacred_library_desc: "Un depósito de escrituras divinas y sabiduría celestial, custodiado por los eruditos más sagrados."

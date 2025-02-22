@@ -1,0 +1,132 @@
+spriteTypes = {
+
+#british isles#
+	spriteType = {
+		name = "GFX_great_project_palace_of_pleasure"
+		texturefile = "gfx//interface//great_projects//great_project_palace_of_pleasure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_bloody_palace"
+		texturefile = "gfx//interface//great_projects//great_project_bloody_palace.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_the_travelers_ship"
+		texturefile = "gfx//interface//great_projects//great_project_the_travelers_ship.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_prince_shipyard"
+		texturefile = "gfx//interface//great_projects//great_project_prince_shipyard.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_princes_navy"
+		texturefile = "gfx//interface//great_projects//great_project_princes_navy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_princess_palace"
+		texturefile = "gfx//interface//great_projects//great_project_princess_palace.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_vampire_fortress"
+		texturefile = "gfx//interface//great_projects//great_project_vampire_fortress.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_gray_palace"
+		texturefile = "gfx//interface//great_projects//great_project_gray_palace.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_dark_church"
+		texturefile = "gfx//interface//great_projects//great_project_dark_church.dds"
+	}
+
+#France
+
+	spriteType = {
+		name = "GFX_great_project_alchemist_tower"
+		texturefile = "gfx//interface//great_projects//great_project_alchemist_tower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_academy_mages"
+		texturefile = "gfx//interface//great_projects//great_project_academy_mages.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_archmagus_tower"
+		texturefile = "gfx//interface//great_projects//great_project_archmagus_tower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_mage_market"
+		texturefile = "gfx//interface//great_projects//great_project_mage_market.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_witches_coven"
+		texturefile = "gfx//interface//great_projects//great_project_witches_coven.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_magic_research_tower"
+		texturefile = "gfx//interface//great_projects//great_project_magic_research_tower.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_world_library"
+		texturefile = "gfx//interface//great_projects//great_project_world_library.dds"
+	}
+
+#spain#
+	spriteType = {
+		name = "GFX_great_project_michael_legacy"
+		texturefile = "gfx//interface//great_projects//great_project_michael_legacy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_god_shipyard"
+		texturefile = "gfx//interface//great_projects//great_project_god_shipyard.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_sacred_inquisitors"
+		texturefile = "gfx//interface//great_projects//great_project_sacred_inquisitors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_palace_angels"
+		texturefile = "gfx//interface//great_projects//great_project_palace_angels.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_castle_sacred_queen"
+		texturefile = "gfx//interface//great_projects//great_project_castle_sacred_queen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_barracks_archangel"
+		texturefile = "gfx//interface//great_projects//great_project_barracks_archangel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_rafael_company"
+		texturefile = "gfx//interface//great_projects//great_project_rafael_company.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_sacred_library"
+		texturefile = "gfx//interface//great_projects//great_project_sacred_library.dds"
+	}
+#Personal#
+	spriteType = {
+		name = "GFX_great_project_god_palace"
+		texturefile = "gfx//interface//great_projects//great_project_god_palace.dds"
+	}
+
+}
